@@ -5,6 +5,8 @@
 
 ## 2017/06/12
 
++ PE镜像工具推荐：[微PE工具箱](http://www.wepe.com.cn/)，有win10内核，原生支持nvme协议。
+
 + window7登录密码忘记强制重设
   + 进入PE
   + 使用window密码重置程序重设密码并保存
