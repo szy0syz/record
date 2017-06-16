@@ -36,3 +36,6 @@ overflow: hidden;
 text-overflow: ellipsis;
 white-space: nowrap;
 ```
+
++ webstorm中html里，`meta:vp`+`tab`快速移动端布局头
++ 移动端布局小技巧：最外层盒子是不设置宽和高的
