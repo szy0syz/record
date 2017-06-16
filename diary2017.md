@@ -26,3 +26,13 @@ var curHeight = document.documentElement.clientHeight || document.body.clientHei
 // document.documentElement.clientHeight 的高度就会被放大5倍
 // document.body.clientHeight 的高度还是浏览器可现实页面的高度
 ```
+
+## 2017-06-15
+
+```css
+/*实现文字溢出后出现台阶(...)*/
+overflow: hidden;
+/*文字超出的拆切部分以'...'代表*/
+text-overflow: ellipsis;
+white-space: nowrap;
+```
