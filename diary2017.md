@@ -64,3 +64,31 @@ box.style.left // -> 按见过仍然是"" -> 空字符串  -> 劳资明明在样
 // 正确的方式: 通过浏览器的BOM.window.getComputedStyle拿
 window.getComputedStyle(box)["left"]
 ```
+
+- 关于在JavaScript中通过DOM元素拿样式的总结
+  1. `dom.style.xxx`，通过这样的方式拿到的***永远是浏览器渲染前的行内样式***！
+  2. 可以通过`window.getComputedStyle(xxx)`方法拿到xxx元素在浏览器渲染以后的样式！
+
+- client系列属性总结(重复，为了加强记忆~)：(和内容溢出与否无关)
+  - `clientHeight`：容器的内容高度：内容高度+上下padding填充高度。(不包含border宽度)
+  - `clientWidth`: 容器的内容宽度：内容宽度+左右padding填充宽度。(不包含border宽度)
+  - `clientTop`: 容器上边框的宽度 == `borderTopWidth`
+  - `clientLeft`: 容器左边框的宽度 == `borderLeftWidth`
+
+- offset系列属性总结：(和内容溢出与否无关)
+  - `offsetHeight`: 整个容器自身高度：内容高度+上下padding填充高度+上下边框宽度
+  - `offsetWidth`: 整个容器自身宽度：内容宽度+左右padding填充高度+左右边框宽度
+  - `offsetTop`: 从容器上边框外算起(不含容器边框)到父级参照物内边框的距离
+  - `offsetLeft`: 从容左上边框外算起(不含容器边框)到父级参照物内边框的距离
+  - `offsetParent`: 容器的父级参照物
+
+- scroll系列属性总结：(和内容溢出有关)
+  - `scrollHeight`:
+    1. 内容无溢出时，`scrollHeight` == `clientHeight`
+    2. 内容有溢出时，`scrollHeight`为溢出后内容的真实高度+上下padding填充值
+  - `scrollWidth`(内容无溢出): 
+    1. 内容无溢出时，`scrollWidth` == `clientWidth`
+    2. 内容有溢出时，`scrollWidth`为溢出后内容的真实宽度+左右padding填充值
+  - `scrollHeight`和`scrollWidth`两个属性都是返回近似值，因为如果在浏览器中设置`overflow:hidden;`后会对最终返回结果有影响，再者在非标浏览器IE6~8中也会有不同。
+  - `scrollTop`: [可写]，当前容器滚动卷去的高度
+  - `scrollLeft`: [可写]，当前容器滚动卷去的宽度
