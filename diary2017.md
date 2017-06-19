@@ -39,3 +39,29 @@ white-space: nowrap;
 
 + webstorm中html里，`meta:vp`+`tab`快速移动端布局头
 + 移动端布局小技巧：最外层盒子是不设置宽和高的
+
+## 2017-06-19
+
+> 人为什么要忘记东西呢？又忘了，咋办。
+
+```css
+        .box {
+            position: absolute; /*让小伙固定死以body为父级参照物*/
+            top: 0;
+            left: 0;
+            height: 100px;
+            width: 100px;
+            border: 1px solid #000000;
+            background-color: lightgreen;
+        }
+```
+
+- 好吧，有上面这么一个盒子。
+
+```javascript
+// box的样式通过样式类名直接赋值，虽然在行内。
+box.style.left // -> 按见过仍然是"" -> 空字符串  -> 劳资明明在样式里赋值left0了啊，为哪样是0，坑吧！
+// 如果正好拿到left的值的想办法，其实直接domEle.style[xxx]拿到的其实只是一个行内样式，是渲染前的！
+// 正确的方式: 通过浏览器的BOM.window.getComputedStyle拿
+window.getComputedStyle(box)["left"]
+```
