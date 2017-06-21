@@ -92,3 +92,7 @@ window.getComputedStyle(box)["left"]
   - `scrollHeight`和`scrollWidth`两个属性都是返回近似值，因为如果在浏览器中设置`overflow:hidden;`后会对最终返回结果有影响，再者在非标浏览器IE6~8中也会有不同。
   - `scrollTop`: [可写]，当前容器滚动卷去的高度
   - `scrollLeft`: [可写]，当前容器滚动卷去的宽度
+
+## 2017-06-20
+
+> 话由心生：苏轼、佛印、苏小妹。
