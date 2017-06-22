@@ -121,3 +121,33 @@ var onVisibilityChange = function(){
 // 添加dom二级事件
 document.addEventListener(visibilityChangeEvent, onVisibilityChange);
 ```
+
+- 关于异步获取远程数据后，生成元素子节点后绑定数据的坑，异步的坑还真多！
+
+```javascript
+var ul = document.getElementById("bannerTip");
+var lis = ul.getElementsByTagName("li"); //注意：这里的<li>是根据ajax的异步后的数据生成并绑定的元素，所以说这里的lis是100%的空数组
+var xhr = new XMLHttpRequest;
+xhr.open("get", "./json/data.json");
+xhr.onreadystatechange = function handlerXHR() {
+  if (xhr.readyState === 4 && /^2\d\d$/.test(xhr.status)) {
+    var data = JSON.parse(xhr.responseText);
+    bind(data); //这里进行数据绑定
+    lis = ul.getElementsByTagName("li"); // 在这里才能获取到！
+  }
+}
+// 那么问题就来了！就算你闭包再厉害，也是没得元素可供你绑定啊！
+~function () {
+  for (var i=0; i<lis.length; i++) {
+    var cur = lis[i];
+    cur.index = i;
+    cur.onclick = function () {
+    imgIndex = this.index;
+    changeTip();
+    moveAnimate(inner, {left: -imgIndex*990},500,10);
+    }
+  }
+}();
+// 解决办法：把方法绑定在不异步也有的元素上！
+ul.onclick = function handlerLiClick(ev) { ... }
+```
