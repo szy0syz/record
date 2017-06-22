@@ -96,3 +96,28 @@ window.getComputedStyle(box)["left"]
 ## 2017-06-20
 
 > 话由心生：苏轼、佛印、苏小妹。
+
+## 2017-06-22
+
+- 关于JavaScript监听当前窗口是否正被查看中还是没有被查看的小栗子
+
+```javascript
+// 兼容性：IE10+，Firefox10+,Chrome14+,Opera12.1+,Safari7.1+
+// 在document上先检测有没hidden属性，没有就找webkitHidden，还没有就找mozHidden，最终没有就null
+var hiddenProperty = 'hidden' in document ? 'hidden' :    
+    'webkitHidden' in document ? 'webkitHidden' :    
+    'mozHidden' in document ? 'mozHidden' :    
+    null;
+// 备好页面是否正被打开字符串"visibilitychange"或"webkitvisibilitychange"或"mozvisibilitychange",这个是dom监听事件句柄名称！
+var visibilityChangeEvent = hiddenProperty.replace(/hidden/i, 'visibilitychange');
+// handler 监听函数
+var onVisibilityChange = function(){
+    if (!document[hiddenProperty]) {    
+        document.title='窗口正被查看中';
+    }else{
+        document.title='窗口没被查看中';
+    }
+}
+// 添加dom二级事件
+document.addEventListener(visibilityChangeEvent, onVisibilityChange);
+```
