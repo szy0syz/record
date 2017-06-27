@@ -167,3 +167,11 @@ ul.onclick = function handlerLiClick(ev) { ... }
 ## 2017-06-26
 
   提高幸福感的两种方法：一种叫做提高幸福所得，另一种叫做降低幸福预期。第一种短期很难提升，第二种则是可以操作的。
+
+## 2017-06-27
+
+- [golden-layout][1] 是非常强大的基于 JavaScript 的 Web 布局工具，它支持窗口的拖拽、缩放以及原生式的弹窗，同时 golden-layout 还提供了丰富的接口以方便动态增删元素、修改布局或者自定义主题。golden-layout 官网还提供了与 RequireJS、React、Angular 等多种其他流行框架协同使用的示例。
+
+
+
+  [1]: http://golden-layout.com/
