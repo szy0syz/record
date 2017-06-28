@@ -172,6 +172,13 @@ ul.onclick = function handlerLiClick(ev) { ... }
 
 - [golden-layout][1] 是非常强大的基于 JavaScript 的 Web 布局工具，它支持窗口的拖拽、缩放以及原生式的弹窗，同时 golden-layout 还提供了丰富的接口以方便动态增删元素、修改布局或者自定义主题。golden-layout 官网还提供了与 RequireJS、React、Angular 等多种其他流行框架协同使用的示例。
 
+## 2017-06-28
+
+- [原生JavaScript事件详解][2]，这个图画得好啊！
+
+![282221104503701.gif-32.3kB][3]
 
 
   [1]: http://golden-layout.com/
+  [2]: http://www.cnblogs.com/iyangyuan/p/4190773.html
+  [3]: http://static.zybuluo.com/szy0syz/o0jbgevlfcuci7n23vbkaa2y/282221104503701.gif
