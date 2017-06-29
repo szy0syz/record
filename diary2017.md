@@ -178,7 +178,100 @@ ul.onclick = function handlerLiClick(ev) { ... }
 
 ![282221104503701.gif-32.3kB][3]
 
+## 2017-06-29
+
+- 负边距-带有右边距的浮动子元素列表
+
+![image.png-5.4kB][4]
+看到上面这个图，的第一想法应该是js实现？但其实可以用css实现。不需要单独为每一排最后一个元素单独设`margin-right:0;`。我们可以利用负边距
+
+```html
+<style>
+.wrap2{
+    /*如果把盒子紧贴最右侧，.inner的负边距会体现在浏览器下边的滚动条上，好无奈~~~*/
+    /*position: absolute;
+    right: 0;*/
+    width:322px; /*这里的322px怎么计算的呢？首先是border左右两边各占1px就是2px，然后centent还剩320px，每个小盒子宽各100px就是300px，盒子间间隔10px，需要可见的10px两个就是20px，加起来正好322px。每排最后一个盒子margin-right虽然10px，但不可见。*/
+    border:dashed 1px orange;
+}
+
+.wrap2 .inner{
+  overflow:hidden;
+  margin-right:-10px;
+}
+/*让两个盒子嵌套要显示的那一堆元素，外盒子设置大小，内盒子不设置宽高默认100%，然后设置margin-right为-10px，意思就是让这个盒子右边放大10px，正好把小盒子的margin-right装下*/
+.wrap2 .item{
+    float:left;
+    width:100px;
+    height:100px;
+    margin:10px 10px 10px 0;
+    background:blue;
+}
+</style>
+/*故最终实现原来还是“放大”*/
+<div class="wrap2">
+    <div class="inner">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+  </div>
+</div>
+```
+
+![image.png-16.2kB][5]
+```html
+/*负边距多列布局*/
+<style>
+.body{
+    width:500px;
+    margin:10px;
+    border:dashed 1px orange;
+    overflow:hidden;
+}
+
+.wrap3{
+    float:left;
+    width:100%;
+}
+
+.wrap3 .content{
+    height:200px;
+    margin-right:100px;
+    background:rgba(255,0,0,0.5);
+}
+
+.body .right{
+    width:100px;
+    height:200px;
+    float:left;
+    margin-left:-100px;
+    background:rgba(0,255,0,0.5);
+}
+</style>
+
+<div class="body">
+    <div class="wrap3">
+        <div class="content">
+            Content Content Content Content Content Content Content
+            Content Content Content Content Content Content Content Content
+        </div>
+    </div>
+    <div class="right">Right</div>
+</div>
+```
+
+- 总结【负边距】的应用场景中的作用：
+  1. **绝对居中**。容器内某盒子绝对居中定位，例如轮播图左右两个小按钮图的绝对居中定位，可利用负边距。首先轮播图容器relative定位，小按钮容器absolute定位，小按钮top:50%，此时小按钮图的左上角定点定在轮播图容器的中点，但关键小按钮图整个图都还在中线以下。所以补上一个margin-top:-xxpx，此时数值为需要居中容器高度的一半。margin-top负数的作用是把元素在当前位置往上拉xx像素；
+  2. **多列布局**。最外层一个框(盒子)的宽度500px，然后我们就有这么一个需求，我们两 左右两个列，右列固定宽为100px，左列宽度是不固定的，为外层盒子宽减右列宽。那么我们的负边距又上场了。外盒子设置500px宽，左列盒子float:left，右列盒子float:left，两者均向左浮动必须为同级。然后给左列盒子的内容不设置宽度但设置一个预设高度，撑开盒子，然后设置一个margin-right:100px，这里也就是为其设置需求右列的固定宽度，意思也就是给它留着一个位置，这样好让右列盒子浮动上来。最后给右列盒子设定高宽，宽度就是需求的宽度，最重要的是设置margin-left:-100px，让本身随着流向左浮动100px，正好浮动上去。
+  3. **放大元素**
+  4. **带有右边距的浮动子元素列表**
+
 
   [1]: http://golden-layout.com/
   [2]: http://www.cnblogs.com/iyangyuan/p/4190773.html
   [3]: http://static.zybuluo.com/szy0syz/o0jbgevlfcuci7n23vbkaa2y/282221104503701.gif
+  [4]: http://static.zybuluo.com/szy0syz/v6et7jp97uniqgt1drd8r0vq/image.png
+  [5]: http://static.zybuluo.com/szy0syz/ejist252rt3muul1kgskfhnv/image.png
