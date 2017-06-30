@@ -269,9 +269,13 @@ ul.onclick = function handlerLiClick(ev) { ... }
   3. **放大元素**
   4. **带有右边距的浮动子元素列表**
 
+## 2017-06-30
+
+[利用HTML和CSS实现常见的布局][6]
 
   [1]: http://golden-layout.com/
   [2]: http://www.cnblogs.com/iyangyuan/p/4190773.html
   [3]: http://static.zybuluo.com/szy0syz/o0jbgevlfcuci7n23vbkaa2y/282221104503701.gif
   [4]: http://static.zybuluo.com/szy0syz/v6et7jp97uniqgt1drd8r0vq/image.png
   [5]: http://static.zybuluo.com/szy0syz/ejist252rt3muul1kgskfhnv/image.png
+  [6]: https://segmentfault.com/a/1190000003931851
