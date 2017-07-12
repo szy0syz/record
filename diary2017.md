@@ -286,6 +286,10 @@ ul.onclick = function handlerLiClick(ev) { ... }
 
 - [Superlin读书笔记][7]
 
+## 2017-07-12
+
+[网络爬虫与数据库操作][8]
+
   [1]: http://golden-layout.com/
   [2]: http://www.cnblogs.com/iyangyuan/p/4190773.html
   [3]: http://static.zybuluo.com/szy0syz/o0jbgevlfcuci7n23vbkaa2y/282221104503701.gif
@@ -293,3 +297,4 @@ ul.onclick = function handlerLiClick(ev) { ... }
   [5]: http://static.zybuluo.com/szy0syz/ejist252rt3muul1kgskfhnv/image.png
   [6]: https://segmentfault.com/a/1190000003931851
   [7]: http://read.liuwanlin.info/
+  [8]: https://github.com/leizongmin/book-crawler-mysql-cron/blob/master/book.md
