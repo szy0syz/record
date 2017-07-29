@@ -290,6 +290,22 @@ ul.onclick = function handlerLiClick(ev) { ... }
 
 [网络爬虫与数据库操作][8]
 
+## 2017-07-29
+
+- JavaScript关于引用数据类型的小坑记录
+
+```javascript
+var ary = [ {name: 'xx1'}, {name: 'xx2'} ];
+var obj = { name: 'xxx3' };
+console.dir(ary);
+ary[1] = obj;
+console.dir(ary); // -> [ {name: 'xx1'}, {name: 'xxx3'} ]
+obj = '@@@@@';
+console.dir(ary); // -> [ {name: 'xx1'}, {name: 'xxx3'} ]
+// 第三次输出ary还是没变，因为当`ary[1] = obj`时，是直接给的引用地址，而后面又`obj = '@@@@@'`时，又给obj一个地址，但ary[1]里记录的地址还是原来的xxx3的地址。所以说最后输出一次还是没变。
+```
+
+
   [1]: http://golden-layout.com/
   [2]: http://www.cnblogs.com/iyangyuan/p/4190773.html
   [3]: http://static.zybuluo.com/szy0syz/o0jbgevlfcuci7n23vbkaa2y/282221104503701.gif
