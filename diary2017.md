@@ -311,6 +311,9 @@ console.dir(ary); // -> [ {name: 'xx1'}, {name: 'xxx3'} ]
 
 > 实际上我们做选择的时候，理性提醒我们，我们需要做那种有长期回报的事情比如学习，但实际上更多的时候，决定要做什么的不是理性而是感性，那个感性的自我会提醒道，那个回报周期太长了，还是赶快给自己来个爽的吧。于是，遵从于我们的感性本能。大多数人最终选择了那个马上能带来回报的选项，也就是玩游戏。
 
+## 2017-08-02
+
+[CSS秘密花园教程][9]
 
   [1]: http://golden-layout.com/
   [2]: http://www.cnblogs.com/iyangyuan/p/4190773.html
@@ -320,3 +323,4 @@ console.dir(ary); // -> [ {name: 'xx1'}, {name: 'xxx3'} ]
   [6]: https://segmentfault.com/a/1190000003931851
   [7]: http://read.liuwanlin.info/
   [8]: https://github.com/leizongmin/book-crawler-mysql-cron/blob/master/book.md
+  [9]: http://www.w3cplus.com/blog/tags/502.html
