@@ -315,6 +315,10 @@ console.dir(ary); // -> [ {name: 'xx1'}, {name: 'xxx3'} ]
 
 [CSS秘密花园教程][9]
 
+## 2017-08-06
+
+[技术胖带你玩转ES6视频教程][10]
+
   [1]: http://golden-layout.com/
   [2]: http://www.cnblogs.com/iyangyuan/p/4190773.html
   [3]: http://static.zybuluo.com/szy0syz/o0jbgevlfcuci7n23vbkaa2y/282221104503701.gif
@@ -324,3 +328,4 @@ console.dir(ary); // -> [ {name: 'xx1'}, {name: 'xxx3'} ]
   [7]: http://read.liuwanlin.info/
   [8]: https://github.com/leizongmin/book-crawler-mysql-cron/blob/master/book.md
   [9]: http://www.w3cplus.com/blog/tags/502.html
+  [10]: http://jspang.com/2017/06/03/es6/
