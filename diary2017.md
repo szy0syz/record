@@ -319,6 +319,12 @@ console.dir(ary); // -> [ {name: 'xx1'}, {name: 'xxx3'} ]
 
 [技术胖带你玩转ES6视频教程][10]
 
+## 2017-08-10
+
+- 今天用了一上午时间看了两部koa2的教程，收获颇丰嘛。
+  - [《Koa 框架教程》][11]
+  - [《Koa2进阶学习笔记》][12]
+
   [1]: http://golden-layout.com/
   [2]: http://www.cnblogs.com/iyangyuan/p/4190773.html
   [3]: http://static.zybuluo.com/szy0syz/o0jbgevlfcuci7n23vbkaa2y/282221104503701.gif
@@ -329,3 +335,5 @@ console.dir(ary); // -> [ {name: 'xx1'}, {name: 'xxx3'} ]
   [8]: https://github.com/leizongmin/book-crawler-mysql-cron/blob/master/book.md
   [9]: http://www.w3cplus.com/blog/tags/502.html
   [10]: http://jspang.com/2017/06/03/es6/
+  [11]: http://www.ruanyifeng.com/blog/2017/08/koa.html
+  [12]: https://github.com/chenshenhai/koa2-note
