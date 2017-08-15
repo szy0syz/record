@@ -325,6 +325,12 @@ console.dir(ary); // -> [ {name: 'xx1'}, {name: 'xxx3'} ]
   - [《Koa 框架教程》][11]
   - [《Koa2进阶学习笔记》][12]
 
+## 2017-08-15
+
+> 归根结底的原因在于，大脑是一个神经网络，神经网络最关键的不是逻辑，而是训练。
+
+
+  
   [1]: http://golden-layout.com/
   [2]: http://www.cnblogs.com/iyangyuan/p/4190773.html
   [3]: http://static.zybuluo.com/szy0syz/o0jbgevlfcuci7n23vbkaa2y/282221104503701.gif
