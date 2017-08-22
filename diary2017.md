@@ -333,6 +333,9 @@ console.dir(ary); // -> [ {name: 'xx1'}, {name: 'xxx3'} ]
 
 > 生活的标准**有时候**并不是以你的资金来定义的，就像你无论多贵的穿戴设备，它并不是改变你生活状态的契机。坚持，并有目标的行动，这才是你可能成功的关键。
 
+## 2017-8-22
+
+[JavaScript秘密花园][13]
   
   [1]: http://golden-layout.com/
   [2]: http://www.cnblogs.com/iyangyuan/p/4190773.html
@@ -346,3 +349,4 @@ console.dir(ary); // -> [ {name: 'xx1'}, {name: 'xxx3'} ]
   [10]: http://jspang.com/2017/06/03/es6/
   [11]: http://www.ruanyifeng.com/blog/2017/08/koa.html
   [12]: https://github.com/chenshenhai/koa2-note
+  [13]: http://bonsaiden.github.io/JavaScript-Garden/zh/
