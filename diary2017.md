@@ -333,7 +333,7 @@ console.dir(ary); // -> [ {name: 'xx1'}, {name: 'xxx3'} ]
 
 > 生活的标准**有时候**并不是以你的资金来定义的，就像你无论多贵的穿戴设备，它并不是改变你生活状态的契机。坚持，并有目标的行动，这才是你可能成功的关键。
 
-## 2017-8-22
+## 2017-08-22
 
 [JavaScript秘密花园][13]
 
@@ -343,8 +343,19 @@ console.dir(ary); // -> [ {name: 'xx1'}, {name: 'xxx3'} ]
 
 > 1972年，共产党政府与苏联闹翻，急于同美、日建交，为了顺利建交，共产党政府最终在《中日联合声明》中放弃战争赔偿。因此，日本一再拒绝慰安妇的赔偿要求，但中国政府坚称，放弃只是政府放弃，不包括民间索赔。
 
+[Stylus中文参考文档][14]
+
+## 2017-08-25
+
+> 尼玛，今天帮上海一个读国际会计的大二妹子装mac双系统，拿个U盘拷贝win10_lstb镜像到桌面装的时候竟然把u盘格式化了，我38GB资料，果断用`Disk Drill`恢复，哎，还好全部都恢复出来。
+
+![image.png-200.6kB][15]
+
+> 以后装拼过MAC双系统注意，千万主机U盘格式化后被当做挂载装系统问题！
 
   
+
+
   [1]: http://golden-layout.com/
   [2]: http://www.cnblogs.com/iyangyuan/p/4190773.html
   [3]: http://static.zybuluo.com/szy0syz/o0jbgevlfcuci7n23vbkaa2y/282221104503701.gif
@@ -358,3 +369,6 @@ console.dir(ary); // -> [ {name: 'xx1'}, {name: 'xxx3'} ]
   [11]: http://www.ruanyifeng.com/blog/2017/08/koa.html
   [12]: https://github.com/chenshenhai/koa2-note
   [13]: http://bonsaiden.github.io/JavaScript-Garden/zh/
+  [14]: http://www.zhangxinxu.com/jq/stylus/
+  [15]: http://static.zybuluo.com/szy0syz/5778tc5i6dbnm1zrxs14qdzd/image.png
+
