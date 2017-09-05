@@ -357,6 +357,32 @@ console.dir(ary); // -> [ {name: 'xx1'}, {name: 'xxx3'} ]
 
 `information ->-> knowledge ->->->->->-> wisdom` 是个长期的累积，并非一朝一夕之功。
   
+## 2017-09-05
+
+- 关于多个异步write打开同一个fd读写文件demo
+
+```javascript
+var fs = require('fs');
+var path = require('path');
+process.chdir(__dirname);
+
+var fd = fs.openSync('jerry' + (new Date()).getMilliseconds() + '.txt', 'a');
+
+for (var i = 0; i < 100; i++) {
+  // var buff = new Buffer(i);
+  // var len = buff.length;
+  // var pos = i * len;
+  // fs.writeSync(fd, buff, 0, len, pos);
+  fs.write(fd, i, 'utf8', function(err, written, string) {
+    if(err) {
+      console.log('write err');
+      return;
+    }
+  });
+}
+```
+
+- 但问题是，项目中分片上传大文件合并时会进程无响应呢。
 
 
   [1]: http://golden-layout.com/
