@@ -410,7 +410,9 @@ Chrome --> devtools --> Console --> Rendering --> Paint flushing(调试页面是
 
 > 买买，全手打呢。
 
+## 2017-09-30
 
+> “相信积累的力量，时间会给我们回馈。”   ---- 《把时间当做朋友》
 
   [1]: http://golden-layout.com/
   [2]: http://www.cnblogs.com/iyangyuan/p/4190773.html
