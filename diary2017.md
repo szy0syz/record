@@ -414,6 +414,10 @@ Chrome --> devtools --> Console --> Rendering --> Paint flushing(调试页面是
 
 > “相信积累的力量，时间会给我们回馈。”   ---- 《把时间当做朋友》
 
+## 2017-12-12
+
+> 不伴随痛苦的教训是没有意义的。因为人不付出牺牲，就不会有收获。然而当人们客服苦难的时候，会获得不屈服于任何事物的坚强心灵。是的，钢铁般的心。
+
   [1]: http://golden-layout.com/
   [2]: http://www.cnblogs.com/iyangyuan/p/4190773.html
   [3]: http://static.zybuluo.com/szy0syz/o0jbgevlfcuci7n23vbkaa2y/282221104503701.gif
