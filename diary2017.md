@@ -418,6 +418,10 @@ Chrome --> devtools --> Console --> Rendering --> Paint flushing(调试页面是
 
 > 不伴随痛苦的教训是没有意义的。因为人不付出牺牲，就不会有收获。然而当人们克服苦难的时候，会获得不屈服于任何事物的坚强心灵。是的，钢铁般的心。
 
+## 2017-12-20
+
+不管结果如何，为宏大目标而拼搏过的这段经历，将来一定会成为自己的力量。
+
   [1]: http://golden-layout.com/
   [2]: http://www.cnblogs.com/iyangyuan/p/4190773.html
   [3]: http://static.zybuluo.com/szy0syz/o0jbgevlfcuci7n23vbkaa2y/282221104503701.gif
