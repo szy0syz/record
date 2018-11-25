@@ -47,3 +47,9 @@
 [JavaScript开发者应懂的33个概念](https://github.com/stephentian/33-js-concepts)
 
 [30 Seconds of JavaScript](https://github.com/30-seconds/30-seconds-of-code)
+
+## Books
+
+[Pro Git (中文版)](https://github.com/iissnan/progit)
+
+[JavaScript 编程精解(3rd)](https://legacy.gitbook.com/book/wizardforcel/eloquent-js-3e)
