@@ -48,6 +48,8 @@
 
 [30 Seconds of JavaScript](https://github.com/30-seconds/30-seconds-of-code)
 
+[ES6核心特性](https://github.com/ljianshu/Blog/issues/10)
+
 ## Books
 
 [Pro Git (中文版)](https://github.com/iissnan/progit)
